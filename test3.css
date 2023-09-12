@@ -1,0 +1,112 @@
+body {
+    margin: 0;
+    display: grid;
+    place-items: center;
+    background-color: rgb(0, 0, 0);
+}
+
+.ball {
+    animation: spin 0.5s linear infinite;
+    width: 200px;
+    height: 200px;
+    margin: auto;
+    margin-top: 300px;
+    border-radius: 100%;
+    position: center;
+    box-shadow:
+        inset 0 0 10px #2fff00,
+        inset 20px 0 35px rgb(20, 250, 0),
+        inset -20px 0 50px rgb(0, 230, 70),
+        inset 20px 0 300px rgb(230, 260, 0),
+        inset -20px 0 300px rgb(260, 230, 0),
+        0 0 700px #1eff00,
+        -10px 0 700px rgb(120, 260, 10),
+        10px 0 700px rgb(200, 260, 0);
+}
+
+@keyframes spin {
+    0% {
+        top: 90px;
+        bottom: 90px;
+    }
+    25% {
+        top: 90px;
+        bottom: 90px;
+    }
+    50% {
+        top: 90px;
+        bottom: 90px;
+    }
+    75% {
+        top: 90px;
+        bottom: 90px;
+    }
+    100% {
+        transform: rotate(360deg);
+        top: 90px;
+        bottom: 90px;
+    }
+}
+
+body {
+    margin: 0;
+    overflow: hidden;
+}
+
+.dots-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+}
+
+.dot {
+    position: absolute;
+    width: 4px;
+    height: 4px;
+    background-color: #C0C0C0;
+    border-radius: 100%;
+}
+
+
+.dot:nth-child(1) {
+    top: 30px;
+    left: 60px;
+}
+
+.dot:nth-child(2) {
+    top: 100px;
+    left: 200px;
+}
+
+
+.ball:nth-child(2) {
+    top: 50px;
+    animation-delay: 0.5s;
+}
+
+.planet {
+    width: 00px;
+    height: 50px;
+    background-color: #2a4402b6;
+    border-radius: 50%;
+    position: absolute;
+    animation: spin 5s linear infinite;
+    width: 20px;
+    height: 20px;
+    margin: auto;
+    margin-top: 300px;
+    border-radius: 100%;
+    position: center;
+    box-shadow:
+        inset 0 0 10px  #008000,
+        inset 20px 0 35px rgb(14, 139, 2),
+        inset -20px 0 50px rgb(0, 150, 45),
+        inset 20px 0 300px rgb(230, 260, 0),
+        inset -20px 0 300px rgb(260, 230, 0),
+        0 0 700px  #008000,
+        -10px 0 700px rgb(120, 260, 10),
+        10px 0 700px rgb(200, 260, 0);
+}
